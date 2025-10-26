@@ -1,0 +1,24 @@
+name = "bay-area-travel-menu"
+main = "src/index.ts"
+compatibility_date = "2024-05-12"
+tsconfig = "./tsconfig.worker.json"
+assets = { directory = "public/dist", binding = "ASSETS" }
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "bay-area-travel"
+database_id = "00000000-0000-0000-0000-000000000000"
+
+[[ai]]
+binding = "AI"
+
+[[kv_namespaces]]
+binding = "CACHE"
+id = "00000000000000000000000000000000"
+preview_id = "00000000000000000000000000000000"
+
+[[services]]
+binding = "BROWSER"
+service = "browser-render"
+environment = "production"

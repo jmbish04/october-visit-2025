@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #2f3b4c;
+}
+
+.card-surface {
+  @apply rounded-2xl bg-white shadow-card border border-white/40;
+}
