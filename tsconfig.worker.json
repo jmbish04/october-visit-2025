@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES2020"],
+    "module": "ESNext",
+    "types": ["@cloudflare/workers-types"],
+    "noEmit": false,
+    "outDir": "dist-worker"
+  },
+  "include": ["src/index.ts", "src/routes/**/*.ts", "src/lib/ai.ts", "src/lib/d1.ts"],
+  "exclude": ["src/**/*.tsx", "src/main.tsx"]
+}
